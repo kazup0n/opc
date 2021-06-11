@@ -10,3 +10,4 @@ edition = "2018"
 toml = "0.5.8"
 serde = {version = "1.0.126", features=["derive"]}
 dirs = "3.0.2"
+clap = "2.33.3"
