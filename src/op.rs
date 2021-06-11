@@ -9,11 +9,11 @@ pub struct TokenCache {
 }
 
 impl TokenCache {
-    pub fn renew_token() -> TokenCache {
+    pub fn renew_token(account: String) -> TokenCache {
         let output = Command::new("op")
             .arg("signin")
             .arg("--raw")
-            .arg("my")
+            .arg(account)
             .stdout(Stdio::piped())
             .stdin(Stdio::inherit())
             .output()
