@@ -32,7 +32,7 @@ pub fn opt_parse() -> Options {
             Arg::with_name("store")
                 .long("store")
                 .possible_values(&CacheStoreType::variants())
-                .default_value("KeyChain")
+                .default_value("File")
                 .case_insensitive(true),
         )
         .get_matches();
