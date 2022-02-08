@@ -7,7 +7,7 @@ pub struct Options {
 }
 
 arg_enum! {
-    #[derive(PartialEq, Debug)]    
+    #[derive(PartialEq, Debug)]
     pub enum CacheStoreType {
         File,
         KeyChain,
