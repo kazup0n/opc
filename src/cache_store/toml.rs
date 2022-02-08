@@ -29,7 +29,7 @@ impl CacheFile {
 
 impl TokenCacheStore for CacheFile {
     fn restore_cache(&self) -> Option<TokenCache> {
-        let mut buf = Ok(BufReader::new(&self.file))?;
+        let mut buf = BufReader::new(&self.file);
         let mut line = String::new();
         buf.read_line(&mut line).ok()?;
         buf.read_line(&mut line).ok()?;
