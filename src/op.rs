@@ -13,6 +13,7 @@ impl TokenCache {
         let output = Command::new("op")
             .arg("signin")
             .arg("--raw")
+            .arg("--account")
             .arg(account)
             .stdout(Stdio::piped())
             .stdin(Stdio::inherit())
